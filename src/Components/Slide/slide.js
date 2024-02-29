@@ -15,7 +15,7 @@ const Slider = () => {
                 console.log(err);
             });
     }, []);
-
+    // need to give this dynamically 
     const duneImage='https://res.cloudinary.com/dyivs1j8u/image/upload/v1709126349/wallpapersden.com_poster-of-dune-2020_3840x2160_kqkttw.jpg'
 
     return (
@@ -23,6 +23,7 @@ const Slider = () => {
             {picturesArray.map((item, index) => (
                 <div key={item['name']}>
                     <img src={item['name']!='Dune'?item['image_url']:duneImage} alt={item['name']} />
+                    {/* <img src={item['image_url']} alt={item['name']} /> */}
                 </div>
             ))}
         </Carousel>

@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 
 import {
-    VideoItemContainer,
+   
     VideoItemContent,
     ChannelAndDescription,
     ChannelAndDescriptionContent,
@@ -64,17 +64,12 @@ const Video = () => {
     return (
         <div style={{backgroundColor:'#232b2b',minHeight:'100vh',backgroundSize:'cover'}}>
             <Header/>
-           
                 <VideoItemContent>
-
                     {renderVideoContent()}
                 </VideoItemContent>
-                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Button variant="contained" style={{ width: '120px', marginLeft: '20px' ,marginBottom:'20px'}} >Back</Button>
                 </Link>
-
-            
-            
         </div>
     );
 };

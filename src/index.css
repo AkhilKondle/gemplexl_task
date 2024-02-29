@@ -13,3 +13,21 @@ code {
     monospace;
 }
 
+.ul {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 0;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+/* Hide scrollbar for all browsers */
+.ul::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for Firefox */
+.ul {
+  scrollbar-width: none;
+}

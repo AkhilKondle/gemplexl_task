@@ -11,13 +11,12 @@ export default function Home() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(value)
   };
 
   return (
     <div style={{backgroundColor:'#232b2b',minHeight:'100vh',backgroundSize:'cover'}}>
     <Header/>
-    <div>
+    <div style={{ paddingTop: '65px' }}>
     
     <Box style={{marginBottom:'2px'}} >
       <Tabs

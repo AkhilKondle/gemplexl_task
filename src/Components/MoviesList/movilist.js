@@ -24,11 +24,11 @@ const MovieList = () => {
     const aspectRatio = 16 / 9; 
 
     return (
-        <div style={{ overflow: 'auto' }}>
-    {moviesList.map((item) => (
+        <div >
+        {moviesList.map((item) => (
         <div key={item.id} style={{ color: '#ffffff', marginLeft: '10px', flex: '0 0 auto' }}>
             <p style={{ color: '#59D5E0', fontWeight: '570',fontSize:'18px' }}>{item['card_name']}</p>
-            <ul key={item.id} style={{ display: 'flex', flexDirection: 'row', overflowX: 'auto', padding: 0 }}>
+            <ul className='ul' key={item.id} style={{ display: 'flex', flexDirection: 'row', overflowX: 'auto', padding: 0 ,WebkitOverflowScrolling: 'touch'}}>
                 {item['content_list'].map((subItem) => (
                     
                     <li key={subItem.id}  style={{ listStyle: 'none', margin: '3px', flex: '0 0 auto' }}>

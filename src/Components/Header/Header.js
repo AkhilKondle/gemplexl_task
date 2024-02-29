@@ -6,9 +6,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import { Link } from 'react-router-dom';
 
+import LogoutIcon from '@mui/icons-material/Logout';
 
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
   
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar  position='static' style={{backgroundColor:'#232b2b'}}>
+      <AppBar  position="fixed" style={{ backgroundColor: '#232b2b', top: 0, right: 0 }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -55,6 +55,19 @@ export default function Header() {
             >
               <ShoppingCartIcon/>
             </IconButton>
+            <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <IconButton
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              
+              aria-haspopup="true"
+              
+              color="inherit"
+            >
+              <LogoutIcon/>
+            </IconButton>
+            </Link>
           </Box>
           
         </Toolbar>

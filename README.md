@@ -1,3 +1,5 @@
+![WhatsApp Image 2024-03-01 at 00 23 04](https://github.com/AkhilKondle/gemplexl_task/assets/112197353/03732ee1-6b34-475f-8cd0-7d010e9b12d6)
+![WhatsApp Image 2024-03-01 at 00 23 04 (1)](https://github.com/AkhilKondle/gemplexl_task/assets/112197353/1bbb6635-b767-4d5f-a034-27db8e4e9f43)
 # Project Title: Gemplex movies app
 ## Table of Contents
 
